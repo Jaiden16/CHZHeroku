@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import {login} from "../util/firebaseFunctions"
 
-export default function SignUp() {
+export default function LogIn() {
     const [email, setEmail] = useState("");
     const [password, setPassWord] = useState("");
     const [error, setError] = useState(null);

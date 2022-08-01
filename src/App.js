@@ -4,7 +4,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import UsersIndex from './components/UsersIndex';
 import SignUp from './components/SignUp';
-import Login from './components/LogIn';
+import LogIn from './components/LogIn';
 import AuthProvider from './Provider/authContext';
 import { AuthRoute, ProtectedRoute } from "./util/routeUtil"
 import LoggedIn from './Containers/LoggedIn';
@@ -31,7 +31,7 @@ function App() {
         </AuthRoute>
         
         <AuthRoute path="/login">
-          <Login />
+          <LogIn />
         </AuthRoute>
         
         <ProtectedRoute path="/profile">
