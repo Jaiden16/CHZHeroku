@@ -1,8 +1,15 @@
 import React from "react"
+import SignUp from "./SignUp"
+import LogIn from "./LogIn"
 
 export default function LandingPage(){
     return (
-        <h1>City HoopZ LandingPage</h1>
+        <div>
+            <h1>City HoopZ LandingPage</h1>
+            <SignUp/>
+            <LogIn/>
+        </div>
+
 
     )
 }
