@@ -96,6 +96,7 @@ export default function Profile() {
         if (email) {
             try {
                 let res = await axios.get(`${API}/api/users/photo/${email}`)
+                console.log(res)
                 let url = res.data.url.profile_url
                 // console.log(res.data.url.profile_url)
                 setImageUrl(url)
