@@ -92,6 +92,7 @@ export default function Profile() {
     }
 
     const fetchPhotoUrl = async (email) => {
+        console.log(email)
         if (email) {
             try {
                 let res = await axios.get(`${API}/api/users/photo/${email}`)
